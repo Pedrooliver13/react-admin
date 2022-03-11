@@ -9,7 +9,7 @@ function App() {
   return (
     <Admin dataProvider={dataProvider}>
       <Resource
-        name="posts"
+        name="users"
         list={UserList}
         create={UserCreate}
         edit={UserUpdate}

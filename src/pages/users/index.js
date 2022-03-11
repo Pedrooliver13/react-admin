@@ -10,7 +10,6 @@ import {
   TextInput,
 } from "react-admin";
 
-
 const PostTitle = ({ record }) => {
   return <span>Post {record ? `"${record.title}"` : ""}</span>;
 };
@@ -42,15 +41,12 @@ export const UserUpdate = (props) => {
     <Edit title={<PostTitle />} {...props}>
       <SimpleForm>
         <Grid container spacing={2}>
-          <Grid item md={3}>
-            <TextInput source="name" />
+          <Grid md={12}>
+          <TextInput source="name" />
           </Grid>
-          <Grid item md={6}>
-            <TextInput source="name" />
-          </Grid>
+          <TextInput source="name" />
         </Grid>
       </SimpleForm>
     </Edit>
   );
 };
-
